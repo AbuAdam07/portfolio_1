@@ -376,6 +376,7 @@ body{
   background-repeat: no-repeat;
   background-size: 100% auto;
   height: 769px;
+  padding-bottom: 7px;
 }
 .top_header {
   display: flex;
@@ -417,6 +418,7 @@ body{
   margin-bottom: 208px;
 
 }
+
 .partner_down {
   color: #FFF;
   text-align: center;
@@ -427,13 +429,19 @@ body{
   line-height: normal;
   letter-spacing: 3.7px;
   }
+  .m_2{
+    padding-top: 7px;
+  }
 .header_menu {
   display: flex;
+  padding-top: 7px;
   justify-content: center;
   align-items: center;
-  margin: 7px auto;
+
+
 }
 .project_logo2{
+  
   padding-right: 477px;
   padding-top: 4px;
   position: relative;
@@ -554,7 +562,74 @@ body{
     display: flex;
     justify-content: center;
 
+
 }
+
+.our_capabilities {
+
+}
+.capabilities_menu {
+  margin-top: 98px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 25px auto;
+
+  
+}
+.capabilities_left {display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  padding-left: 152px;
+  flex: 1;
+  letter-spacing: 2px;
+  color: #48555B;
+}
+.capabilities_h3{
+  margin-left: 16px;
+}
+.capabilities_left:after{
+  align-self: center;
+  content: '';
+  width: 50px;
+  height: 2px;
+  background-color: #00A4E5;
+  display: block;
+  margin: 0;
+
+}
+.capabilities_center {
+  color: #48555B;
+  flex: 2;
+font-family: 'OpenSans';
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px; /* 172.727% */
+letter-spacing: 1.2px;
+}
+.capabilities_btn {
+  background-color: #00A4E5;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  color: #FFF;
+  text-align: center;
+  font-family: 'OpenSans';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  border:none;
+
+}
+.btn_text{
+padding-right: 200px;
+
+}
+
 @media screen and (max-width:1440px) {
     .container{
     padding: 0 50px;
@@ -573,10 +648,16 @@ body{
 .ul_menu{
   justify-content: flex-start;
   flex-wrap: wrap;
-}}
+}
 .project_logo2{
   padding: 0 auto;
 }
+.capabilities_menu{
+padding: 0 auto;
+justify-content: center;
+
+
+}}
 
 @media screen and (max-width:1024px) {
     .container{
@@ -584,6 +665,24 @@ body{
 }
 .story_inner{
     flex-wrap: wrap;
+}
+.capabilities_menu{
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.capabilities_left{
+  padding-left: 0;
+  justify-content: center;
+  text-align: center;
+}
+.btn_text{
+  align-self: center;
+  margin: 0 auto;
+  padding-left: 190px;
 }}
 
 @media screen and (max-width:500px) {
@@ -601,5 +700,12 @@ body{
 }
 .story_item:nth-child(3){
     margin-bottom: 0;
+}
+.capabilities_menu{
+  flex-direction: column;
+  align-self: center;
+}
+.btn_text{
+  padding: 0;
 }
 } 
