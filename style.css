@@ -577,27 +577,34 @@ body{
 
 .our_capabilities {
 
+
 }
 .capabilities_menu {
-  margin-top: 98px;
-  display: flex;
-  justify-content: space-between;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+
   align-items: center;
   text-align: center;
   padding: 25px auto;
 
   
 }
+.tupo_p{
+  white-space: nowrap;
+
+}
 .capabilities_left {display: flex;
   flex-direction: column;
   white-space: nowrap;
-  padding-left: 152px;
+  padding-left: 143px;
   flex: 1;
   letter-spacing: 2px;
   color: #48555B;
 }
 .capabilities_h3{
   margin-left: 16px;
+  margin-top: 0;
 }
 .capabilities_left:after{
   align-self: center;
@@ -613,11 +620,11 @@ body{
   color: #48555B;
   flex: 2;
 font-family: 'Open Sans';
-font-size: 11px;
+font-size: 8px;
 font-style: normal;
 font-weight: 400;
 line-height: 19px; /* 172.727% */
-letter-spacing: 1.2px;
+letter-spacing: 1px;
 }
 .capabilities_btn {
   background-color: #00A4E5;
@@ -636,7 +643,7 @@ letter-spacing: 1.2px;
 
 }
 .btn_text{
-padding-right: 200px;
+padding-right: 112px;
 }
 
 .structure {
@@ -651,9 +658,10 @@ padding-right: 200px;
   width: 100%; /* задаем ширину контейнера в 100% от доступного пространства */
   gap: 0;
   justify-items: center;
-  padding-top: 47px;
+  padding-top: 70px;
 }
 .structure_item {
+  padding-right: 19px;
   display: grid;
   grid-template-rows: auto;
   width: 295px;
@@ -885,7 +893,7 @@ justify-content: center;
     flex-wrap: wrap;
 }
 .capabilities_menu{
-  flex-direction: column;
+  grid-template-columns: 1fr;
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
@@ -900,7 +908,7 @@ justify-content: center;
 .btn_text{
   align-self: center;
   margin: 0 auto;
-  padding-left: 190px;
+padding-left: 110px;
 }
 .structure_menu{
   grid-template-columns: repeat(2, 1fr);
@@ -922,6 +930,9 @@ justify-content: center;
     .project_logo2{
       padding-right: 0;
       justify-content: center;
+    }
+    .capabilities_center{
+      font-size: 6px;
     }
 .story_right{
     flex-wrap: wrap;
@@ -950,5 +961,8 @@ justify-content: center;
   grid-template-columns: repeat(2, 1fr);
 }
 .under_ul1{
+  padding-left: 0;
+}
+.under_ul3{
   padding-left: 0;
 }}
